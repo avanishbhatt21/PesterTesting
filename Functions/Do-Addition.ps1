@@ -5,11 +5,11 @@ function Do-Addition {
         $Num2
     )
 
-    Try {
+    try {
         $Result = $Num1 + $Num2
         return $Result
     } catch {
         throw "Input has incorrect format"
     }
-    
+
 }

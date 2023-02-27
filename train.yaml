@@ -1,0 +1,11 @@
+language: Powershell
+
+build_types:
+    - build_type:
+        name: quick
+        build:
+            - script: build.bat build
+test_types:
+    - test_type:
+        name: unit
+        test: ./Execute-Pester.ps1

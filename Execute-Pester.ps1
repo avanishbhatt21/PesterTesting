@@ -20,7 +20,7 @@ $config = [PesterConfiguration]@{
     }
     TestResult = @{
         Enabled = $true 
-        OutputPath = '$PSScriptRoot\Test-Results\Result.xml'
+        OutputPath = "$PSScriptRoot\Test-Results\Result.xml"
         OutputFormat = 'JUnitXml'
     }
 }

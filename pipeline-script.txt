@@ -1,0 +1,43 @@
+pipeline {
+  agent {
+    node {
+      label 'kaniko'
+    }
+
+  }
+  stages {
+    stage('Generate result file') {
+      steps {
+        container(name: 'kaniko') {
+          writeFile file: '/home/jenkins/agent/workspace/pester-testing/result.xml', text: '''<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<testsuites xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="junit_schema_4.xsd" name="Pester" tests="3" errors="0" failures="0" disabled="0" time="0.954">
+  <testsuite name="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="0" skipped="0" disabled="0" package="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" time="0.954">
+    <properties>
+      <property name="clr-version" value="4.0.30319.42000" />
+      <property name="user-domain" value="EC2AMAZ-L26PGPF" />
+      <property name="cwd" value="C:\\Users\\Administrator\\PesterTesting" />
+      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\\Windows|\\Device\\Harddisk0\\Partition1" />
+      <property name="machine-name" value="EC2AMAZ-L26PGPF" />
+      <property name="os-version" value="10.0.20348" />
+      <property name="junit-version" value="4" />
+      <property name="user" value="Administrator" />
+    </properties>
+    <testcase name="Tests for Do-Addition.Should add these numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" assertions="0" time="0.019" />
+    <testcase name="Tests for Do-Addition.Should add other numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" assertions="0" time="0.184" />
+    <testcase name="Tests for Do-Addition.Should throw error with incorrect input" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" assertions="0" time="0.320" />
+  </testsuite>
+</testsuites>'''
+        }
+      }
+    }
+    stage('junit part') {
+      steps {
+        container(name: 'kaniko') {
+          junit 'result.xml'
+        }
+      }
+    }
+  }
+}
+
+

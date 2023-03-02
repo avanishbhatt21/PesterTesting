@@ -1,8 +1,8 @@
 Install-Module -Name Pester -Force -SkipPublisherCheck
 
-$Module = Get-ChildItem -Path "$PSScriptRoot\Tests\Do-Addition.tests.ps1"
+$Module = Get-ChildItem -Path "$PSScriptRoot\Tests\*.tests.ps1"
 
-$OriginScript = "$PSScriptRoot\Functions\Do-Addition.ps1"
+$OriginScript = Get-ChildItem -Path "$PSScriptRoot\Functions\Do-*.ps1"
 
 Import-Module -Force $OriginScript -DisableNameChecking
 
@@ -20,7 +20,7 @@ $config = [PesterConfiguration]@{
     }
     TestResult = @{
         Enabled = $true 
-        OutputPath = "$PSScriptRoot\Test-Results\Result.xml"
+        OutputPath = Join-Path $PSScriptRoot "\Test-Results\Result.xml" #"$PSScriptRoot\Test-Results\Result.xml"
         OutputFormat = 'JUnitXml'
     }
 }

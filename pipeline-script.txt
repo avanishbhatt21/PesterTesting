@@ -11,65 +11,65 @@ pipeline {
         container(name: 'kaniko') {
           writeFile file: '/home/jenkins/agent/workspace/pester-testing/result.xml', text: '''<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <testsuites xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="junit_schema_4.xsd" name="Pester" tests="12" errors="0" failures="0" disabled="0" time="3.378">
-  <testsuite name="C:\Users\Administrator\PesterTesting\Tests\Do-Addition.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="0" skipped="0" disabled="0" package="C:\Users\Administrator\PesterTesting\Tests\Do-Addition.tests.ps1" time="1.412">
+  <testsuite name="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="0" skipped="0" disabled="0" package="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" time="1.412">
     <properties>
       <property name="clr-version" value="4.0.30319.42000" />
       <property name="user-domain" value="EC2AMAZ-L26PGPF" />
-      <property name="cwd" value="C:\Users\Administrator\PesterTesting" />
-      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\Windows|\Device\Harddisk0\Partition1" />
+      <property name="cwd" value="C:\\Users\\Administrator\\PesterTesting" />
+      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\\Windows|\\Device\\Harddisk0\\Partition1" />
       <property name="machine-name" value="EC2AMAZ-L26PGPF" />
       <property name="os-version" value="10.0.20348" />
       <property name="junit-version" value="4" />
       <property name="user" value="Administrator" />
     </properties>
-    <testcase name="Tests for Do-Addition.Should add these numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Addition.tests.ps1" assertions="0" time="0.067" />
-    <testcase name="Tests for Do-Addition.Should add other numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Addition.tests.ps1" assertions="0" time="0.140" />
-    <testcase name="Tests for Do-Addition.Should throw error with incorrect input" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Addition.tests.ps1" assertions="0" time="0.914" />
+    <testcase name="Tests for Do-Addition.Should add these numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" assertions="0" time="0.067" />
+    <testcase name="Tests for Do-Addition.Should add other numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" assertions="0" time="0.140" />
+    <testcase name="Tests for Do-Addition.Should throw error with incorrect input" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Addition.tests.ps1" assertions="0" time="0.914" />
   </testsuite>
-  <testsuite name="C:\Users\Administrator\PesterTesting\Tests\Do-Division.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="1" skipped="0" disabled="0" package="C:\Users\Administrator\PesterTesting\Tests\Do-Division.tests.ps1" time="0.735">
+  <testsuite name="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Division.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="1" skipped="0" disabled="0" package="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Division.tests.ps1" time="0.735">
     <properties>
       <property name="clr-version" value="4.0.30319.42000" />
       <property name="user-domain" value="EC2AMAZ-L26PGPF" />
-      <property name="cwd" value="C:\Users\Administrator\PesterTesting" />
-      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\Windows|\Device\Harddisk0\Partition1" />
+      <property name="cwd" value="C:\\Users\\Administrator\\PesterTesting" />
+      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\\Windows|\\Device\\Harddisk0\\Partition1" />
       <property name="machine-name" value="EC2AMAZ-L26PGPF" />
       <property name="os-version" value="10.0.20348" />
       <property name="junit-version" value="4" />
       <property name="user" value="Administrator" />
     </properties>
-    <testcase name="Tests for Do-Division.Should add these numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Division.tests.ps1" assertions="0" time="0.073" />
-    <testcase name="Tests for Do-Division.Should add other numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Division.tests.ps1" assertions="0" time="0.104" />
-    <testcase name="Tests for Do-Division.Should throw error with incorrect input" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Division.tests.ps1" assertions="0" time="0.136" />
+    <testcase name="Tests for Do-Division.Should add these numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Division.tests.ps1" assertions="0" time="0.073" />
+    <testcase name="Tests for Do-Division.Should add other numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Division.tests.ps1" assertions="0" time="0.104" />
+    <testcase name="Tests for Do-Division.Should throw error with incorrect input" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Division.tests.ps1" assertions="0" time="0.136" />
   </testsuite>
-  <testsuite name="C:\Users\Administrator\PesterTesting\Tests\Do-Multiplication.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="2" skipped="0" disabled="0" package="C:\Users\Administrator\PesterTesting\Tests\Do-Multiplication.tests.ps1" time="0.682">
+  <testsuite name="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Multiplication.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="2" skipped="0" disabled="0" package="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Multiplication.tests.ps1" time="0.682">
     <properties>
       <property name="clr-version" value="4.0.30319.42000" />
       <property name="user-domain" value="EC2AMAZ-L26PGPF" />
-      <property name="cwd" value="C:\Users\Administrator\PesterTesting" />
-      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\Windows|\Device\Harddisk0\Partition1" />
+      <property name="cwd" value="C:\\Users\\Administrator\\PesterTesting" />
+      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\\Windows|\\Device\\Harddisk0\\Partition1" />
       <property name="machine-name" value="EC2AMAZ-L26PGPF" />
       <property name="os-version" value="10.0.20348" />
       <property name="junit-version" value="4" />
       <property name="user" value="Administrator" />
     </properties>
-    <testcase name="Tests for Do-Multiplication.Should add these numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Multiplication.tests.ps1" assertions="0" time="0.027" />
-    <testcase name="Tests for Do-Multiplication.Should add other numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Multiplication.tests.ps1" assertions="0" time="0.169" />
-    <testcase name="Tests for Do-Multiplication.Should throw error with incorrect input" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Multiplication.tests.ps1" assertions="0" time="0.053" />
+    <testcase name="Tests for Do-Multiplication.Should add these numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Multiplication.tests.ps1" assertions="0" time="0.027" />
+    <testcase name="Tests for Do-Multiplication.Should add other numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Multiplication.tests.ps1" assertions="0" time="0.169" />
+    <testcase name="Tests for Do-Multiplication.Should throw error with incorrect input" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Multiplication.tests.ps1" assertions="0" time="0.053" />
   </testsuite>
-  <testsuite name="C:\Users\Administrator\PesterTesting\Tests\Do-Subtraction.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="3" skipped="0" disabled="0" package="C:\Users\Administrator\PesterTesting\Tests\Do-Subtraction.tests.ps1" time="0.549">
+  <testsuite name="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Subtraction.tests.ps1" tests="3" errors="0" failures="0" hostname="EC2AMAZ-L26PGPF" id="3" skipped="0" disabled="0" package="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Subtraction.tests.ps1" time="0.549">
     <properties>
       <property name="clr-version" value="4.0.30319.42000" />
       <property name="user-domain" value="EC2AMAZ-L26PGPF" />
-      <property name="cwd" value="C:\Users\Administrator\PesterTesting" />
-      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\Windows|\Device\Harddisk0\Partition1" />
+      <property name="cwd" value="C:\\Users\\Administrator\\PesterTesting" />
+      <property name="platform" value="Microsoft Windows Server 2022 Datacenter|C:\\Windows|\\Device\\Harddisk0\\Partition1" />
       <property name="machine-name" value="EC2AMAZ-L26PGPF" />
       <property name="os-version" value="10.0.20348" />
       <property name="junit-version" value="4" />
       <property name="user" value="Administrator" />
     </properties>
-    <testcase name="Tests for Do-Subtraction.Should add these numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Subtraction.tests.ps1" assertions="0" time="0.046" />
-    <testcase name="Tests for Do-Subtraction.Should add other numbers" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Subtraction.tests.ps1" assertions="0" time="0.240" />
-    <testcase name="Tests for Do-Subtraction.Should throw error with incorrect input" status="Passed" classname="C:\Users\Administrator\PesterTesting\Tests\Do-Subtraction.tests.ps1" assertions="0" time="0.017" />
+    <testcase name="Tests for Do-Subtraction.Should add these numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Subtraction.tests.ps1" assertions="0" time="0.046" />
+    <testcase name="Tests for Do-Subtraction.Should add other numbers" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Subtraction.tests.ps1" assertions="0" time="0.240" />
+    <testcase name="Tests for Do-Subtraction.Should throw error with incorrect input" status="Passed" classname="C:\\Users\\Administrator\\PesterTesting\\Tests\\Do-Subtraction.tests.ps1" assertions="0" time="0.017" />
   </testsuite>
 </testsuites>'''
         }

@@ -1,8 +1,8 @@
-Install-Module -Name Pester -Force -SkipPublisherCheck
+# Install-Module -Name Pester -Force -SkipPublisherCheck
 
 $Module = Get-ChildItem -Path "$PSScriptRoot\Tests\*.tests.ps1"
 
-$OriginScript = Get-ChildItem -Path "$PSScriptRoot\Functions\Do-*.ps1"
+$OriginScript = Get-ChildItem -Path "$PSScriptRoot\Functions\*.ps1"
 
 Import-Module -Force $OriginScript -DisableNameChecking
 

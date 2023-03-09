@@ -1,4 +1,4 @@
-# Install-Module -Name Pester -Force -SkipPublisherCheck
+Install-Module -Name Pester -Force -SkipPublisherCheck
 
 $Module = Get-ChildItem -Path "$PSScriptRoot\Tests\*.tests.ps1"
 

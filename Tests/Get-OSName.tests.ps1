@@ -21,7 +21,7 @@ Describe 'Tests for Get-OSName' {
         Get-OSName | Should -Be "OS is MacOS"
     }
 
-    It "Should catch error **********" {
+    It "Should catch error in Get-ComputerInfo" {
         Mock Get-ComputerInfo {
             throw "404 Error"
         }

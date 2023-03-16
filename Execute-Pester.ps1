@@ -1,4 +1,4 @@
-Install-Module -Name Pester -Force -SkipPublisherCheck
+Install-Module -Name Pester -SkipPublisherCheck
 
 $Module = Get-ChildItem -Path "$PSScriptRoot\Tests\*.tests.ps1"
 
@@ -20,7 +20,7 @@ $config = [PesterConfiguration]@{
     }
     TestResult = @{
         Enabled = $true 
-        OutputPath = Join-Path $PSScriptRoot "\Test-Results\Result.xml" #"$PSScriptRoot\Test-Results\Result.xml"
+        OutputPath = Join-Path $PSScriptRoot "\Test-Results\Result.xml"
         OutputFormat = 'JUnitXml'
     }
 }

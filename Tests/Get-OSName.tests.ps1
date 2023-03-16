@@ -1,5 +1,4 @@
 Describe 'Tests for Get-OSName' {
-
     It "Should check for Windows" {
         Mock Get-ComputerInfo {
             return @{OsName = 'Windows'}
